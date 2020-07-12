@@ -1,3 +1,4 @@
+require('dotenv')()
 import express from "express"
 import bodyparser from "body-parser"
 
@@ -6,7 +7,7 @@ async function main() {
 
   app.use(bodyparser.json())
 
-  
+
 }
 
 main()
