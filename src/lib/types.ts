@@ -8,6 +8,7 @@ export interface Group {
   assets_count: number
   documents_count: number
   delta: boolean
+  documents: Array<any>
   depreciation_rate: string
   pricing_bracket_interval: any
   enable_service_triage: boolean
@@ -48,4 +49,8 @@ export interface SubGroup {
   staff_checkout_duration_days: number
   staff_checkout_duration_hours: number
   staff_checkout_duration_mins: number
+}
+
+export interface Category extends Group {
+  subgroups: SubGroup[]
 }
